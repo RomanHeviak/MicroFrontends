@@ -1,0 +1,27 @@
+.wrapper {
+  border:  1px solid;
+  margin: 4px 0;
+  position: relative;
+}
+
+.mfeName{
+  position: absolute;
+  right: 8px;
+  background: purple;
+  color: white;
+  top: 4px;
+  padding: 4px;
+}
+
+.buttons {
+  padding: 12px;
+}
+
+.buttons > button {
+  margin-right: 8px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+} 

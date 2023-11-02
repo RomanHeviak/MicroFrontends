@@ -1,0 +1,18 @@
+.wrapper {
+  border:  1px solid;
+  margin: 4px 0;
+  position: relative;
+}
+
+.mfeName{
+  position: absolute;
+  right: 8px;
+  background: purple;
+  color: white;
+  top: 4px;
+  padding: 4px;
+}
+
+.items {
+  padding: 12px;
+}
