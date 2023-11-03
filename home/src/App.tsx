@@ -1,34 +1,31 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import ReactDOM from "react-dom";
-import Header from 'header/Header';
-import List from 'list/List';
 import "./index.css";
 
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+import Home from "./components/Home/Home";
+import Counter from "./components/Counter/Counter";
+import Navbar from "./components/Navbar/Navbar";
+
 const App = () => {
-  const [count, setCount] = useState(0);
-
-  const add = () => {
-    setCount(prev => prev + 1);
-  }
-
-  const remove = () => {
-    setCount(prev => prev - 1);
-  }
 
   return (
     <div className="wrapper">
-      <div className='mfeName'>CFE (Host)</div>
-
-      <div>
-        <div>Name: home</div>
-        
-        {/* Header MFE */}
-        <Header count={count} />
-
-        {/* List MFE */}
-        <List add={add} remove={remove}/>
+      <div className='mfeNameMain'>
+        <span>CFE (Host)</span>
       </div>
-      
+      <Router>
+        <Navbar/>
+
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/counter" element={<Counter/>} />
+        </Routes>
+      </Router>
     </div>
   )
 };

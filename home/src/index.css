@@ -15,3 +15,15 @@
   padding: 4px;
   border-radius: 4px;
 }
+
+.mfeNameMain {
+  display: flex;
+  justify-content: end;
+}
+
+.mfeNameMain > span {
+  background: purple;
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+}
