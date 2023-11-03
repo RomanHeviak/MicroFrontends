@@ -4,7 +4,7 @@ import './index.css';
 const List = (props: any) => {
 
     return (
-        <div className='wrapper'>
+        <div className='content'>
             <div className='mfeName'>Add buttons MFE</div>
 
             <div className='buttons'>

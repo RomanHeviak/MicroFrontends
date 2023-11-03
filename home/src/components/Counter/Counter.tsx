@@ -14,7 +14,7 @@ const Counter = () => {
     }
 
     return (
-        <div>
+        <div style={{'display' : 'flex', 'justifyContent' : 'space-between'}}>
             <Header count={count} />
             <List add={add} remove={remove}/>
         </div>

@@ -1,7 +1,8 @@
-.wrapper {
+.content {
   border:  1px solid;
   margin: 4px 0;
   position: relative;
+  width: 48%;
 }
 
 .mfeName{

@@ -4,7 +4,7 @@ import './index.css'
 const Header = (props: any) => {
     
     return (
-        <div className='wrapper'>
+        <div className='content'>
             <div className='mfeName'>Header MFE</div>
 
             <div className='items'>
