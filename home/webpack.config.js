@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
 const deps = require('./package.json').dependencies;
-module.exports = (env) => ({
+module.exports = (_, argv) => ({
   output: {
     publicPath: 'auto'
   },
@@ -46,7 +46,9 @@ module.exports = (env) => ({
       name: 'home',
       filename: 'remoteEntry.js',
       remotes: {
-        header: `header@https://micro-frontends-header.vercel.app/remoteEntry.js`,
+        header: argv.mode === 'develpment' ? 
+        'header@https://micro-frontends-header.vercel.app/remoteEntry.js' : 
+        `header@http://localhost:3001/remoteEntry.js`,
         list: 'list@https://micro-frontends-list.vercel.app/remoteEntry.js'
       },
       exposes: {},
