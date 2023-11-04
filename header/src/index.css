@@ -3,6 +3,7 @@
   margin: 4px 0;
   position: relative;
   width: 48%;
+  min-width: 300px;
 }
 
 .mfeName{
