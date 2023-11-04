@@ -46,7 +46,7 @@ module.exports = (_, argv) => ({
       name: 'home',
       filename: 'remoteEntry.js',
       remotes: {
-        header: 'header@https://localhost:3002/remoteEntry.js',
+        header: 'header@https://localhost:3001/remoteEntry.js',
         list: 'list@http://localhost:3002/remoteEntry.js'
       },
       exposes: {},
